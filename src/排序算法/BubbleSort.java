@@ -18,7 +18,7 @@ public class BubbleSort {
         System.out.println("排序前的时间为："+date1Str);
 
         bubbleSort(arr);
-        
+
         Date date2 = new Date();
         String date2Str = simpleDateFormat.format(date2);
         System.out.println("排序前的时间为："+date2Str);
