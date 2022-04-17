@@ -21,8 +21,9 @@ public class InsertSort {
                 insertIndex--;
             }
             //当退出while循环时，说明插入位置找到:insertIndex+1
-            arr[insertIndex + 1] = insertVal;
-
+            if(insertIndex +1 == i) {
+                arr[insertIndex + 1] = insertVal;
+            }
             System.out.printf("第轮%d插入后：%s\n" , i, Arrays.toString(arr));
             System.out.println();
         }
