@@ -119,6 +119,7 @@ class EmpLinkedList{
 
     //添加雇员到链表
     //假定添加到最后
+
     public void add(Emp emp){
         //如果是添加第一个雇员
         if(head==null){

@@ -5,12 +5,12 @@ import java.util.List;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int arr[] = {1, 8, 10, 89, 1000, 1000, 1000, 1234};
+        int arr[] = {1, 8, 10, 89, 1000, 1000, 1000, 1000, 1234};
 
 //        int resIndex = binarySearch(arr, 0, arr.length-1, 1000);
 //        System.out.println("resIndex:"+resIndex);
 
-        List<Integer> resIndex = binarySearchAll(arr, 0, arr.length-1, 124);
+        List<Integer> resIndex = binarySearchAll(arr, 0, arr.length-1, 1000);
         System.out.println("resIndex:"+resIndex);
     }
 
@@ -58,7 +58,7 @@ public class BinarySearch {
             list.add(mid);
 
 
-            //向左边扫描
+            //向右边扫描
             temp = mid + 1;
             while(true){
                 if(temp > arr.length-1 || arr[temp] != findVal){
